@@ -1,0 +1,62 @@
+//exp 2a
+#include <stdio.h>
+int main () {
+int a, b, multiplication, addition, subtraction, remainder;
+printf ("Enter the first number = ");
+scanf("%i", &a);
+printf("Enter the second number =");
+scanf("%i", &b);
+addition = a + b;
+subtraction=a-b;
+multiplication = a* b;
+remainder = a%b;
+printf ("Addition = %i\n", addition);
+printf ("Subtraction = %i\n", subtraction);
+printf ("multiplication = %i\n", multiplication);
+printf ("remainder = %i\n", remainder);
+return 0;
+}
+
+//exp2b
+#include<stdio.h>
+int main(){
+    float radius,side,area,per,length,breadth;
+    printf("enter radius value=");
+    scanf("%f",&radius);
+    area=3.14*radius*radius;
+    per=2*3.14*radius;
+    printf("area of circle =%f\n",area);
+    printf("per of circle =%f\n",per);
+    printf("enter side of square =");
+    scanf("%f",&side);
+    area=side*side;
+    per=4*side;
+    printf("area of square=%f\n",area);
+    printf("per of square=%f\n",per);
+    printf("enter length and breadth of the rectangle =");
+    scanf("%f%f",&length,&breadth);
+    area=length*breadth;
+    per=2*(length+breadth);
+    printf("area of rectangle=%f\n",area);
+    printf("per of rectangle =%f\n",per);
+    return 0;
+
+
+}
+
+//exp2c
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float x1,x2,y1,y2,distance;
+    printf("enter the coordinates of x and y axis of the point 1 = ");
+    scanf("%f%f",&x1,&y1);
+    printf("enter the coordinates of x and y axis of the point 2= ");
+    scanf("%f%f",&x2,&y2);
+    distance=sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+    printf("distance between point 1 and 2 = %f",distance);
+
+    return 0;
+
+
+}

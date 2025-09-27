@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() {
+    float English,Mathematics,Science,Computer ,History,TotalMarks,AverageMarks,Percentage;
+    scanf("%f%f%f%f%f",&English,&Mathematics,&Science,&Computer,&History);
+    TotalMarks=English+Mathematics+Science+Computer+History;
+    AverageMarks=TotalMarks/5;
+    Percentage=(TotalMarks*100/500);
+    printf("%.0f %.2f %.2f",TotalMarks,AverageMarks,Percentage);
+    
+    return 0;
+}

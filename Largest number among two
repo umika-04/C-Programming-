@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("enter num x and y ");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    printf("number x is greater ");
+    else
+    printf("number y is greater");
+    return 0;
+}

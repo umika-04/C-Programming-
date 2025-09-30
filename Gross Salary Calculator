@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int B;
+    float gross,hra,da;
+    scanf("%d",&B);
+    if (B<= 10000){
+        hra=B*20/100;
+        da=B*30/100;
+        gross=B+hra+da;
+    printf("%.2f",gross);
+    }
+    else if (B<= 20000)
+    { hra=B*25/100;
+        da=B*40/100;
+        gross=B+hra+da;
+    printf("%.2f",gross);
+    }
+    else
+    {   hra=B*30/100;
+        da=B*50/100;
+        gross=B+hra+da;
+    printf("%.2f",gross);
+    }
+    
+    
+    
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

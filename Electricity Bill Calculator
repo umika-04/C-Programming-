@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float bill,u;
+    scanf("%f",&u);
+    if (u<=50){
+        bill=u*0.50;
+    }
+    else if(u<=150){
+        bill = 50*0.50 + (u-50)*0.75;
+    }    
+    else if(u<=250){
+        bill = 50*0.50 + 100*0.75 + (u-150)*1.20;
+    }    
+    else{
+        bill = 50*0.50 + 100*0.75 + 100*1.20 + (u-250)*1.50; 
+    }
+    printf("%.2f",bill+((20.0/100)*bill));
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
